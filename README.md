@@ -1,20 +1,20 @@
-# 👋 Hi, I'm Mark!
+# Mark Kinuthia 
 
-## About Me
-I'm a passionate developer with a focus on creating efficient, scalable, and user-friendly applications. I enjoy solving real-world problems through technology and have experience working on various web development projects.
+Passionate **Full-Stack Software Developer & Systems Architect** specializing in building scalable web applications, robust backend systems, and offline-first AI integrations. I bridge the gap between complex technical architecture and seamless user experiences.
 
-- 💼 Currently working on [Comfort Executive Suites](https://kinuthia-mark.github.io/comfort-website/index.html) to enhance guest experience and streamline hotel operations.
-- 🌟 Providing freelance coding services on Fiverr, specializing in debugging and feature creation.
-- 🎮 In my spare time i like to play video games, mainly fps.
-## Skills
-- **Languages:** JavaScript, HTML, CSS, Python, c++
-- **Frameworks & Libraries:** React, Node.js, Three.js
-- **Tools & Platforms:** Git, GitHub, VSCode, Firebase
-- **Other Tech:** WebGL, SVG, SQL, JSON
+---
 
-## Current Projects
-- 🌐 **Comfort Executive Suites Website** – Developing the online presence for a newly opened hotel with a focus on customer engagement.
-- 🔧 **Freelance Development** – Helping clients with custom website solutions, particularly in styling and animation using modern web techniques.
+## 🚀 Current Focus & Engineering
+- **Offline & Local AI Integration:** Designing and deploying air-gapped machine learning workflows (such as quantized LLMs like MedGemma and local speech recognition via Whisper) optimized for edge and desktop hardware constraints.
+- **Enterprise & Full-Stack Systems:** Building modular, high-performance web applications and clinical management systems using **Python, PHP, C#, Java, and JavaScript/TypeScript**.
+- **Production Architecture:** Translating requirements into clean database schemas, secure backend logic, and scalable RESTful APIs.
 
+---
 
+## 💻 Tech Stack
 
+* **Languages:** Python, PHP, C#, Java, JavaScript / TypeScript, SQL, HTML / CSS
+* **Backend & Databases:** Node.js, MySQL, Relational Database Systems, Firebase
+* **Frontend & Frameworks:** React, Modern CSS Architecture, Dynamic UI Components
+* **AI & Specialized Tech:** Local Model Quantization (GGUF/Q4), Edge AI Execution, API Integrations
+* **Tools & Platforms:** Git, GitHub, VSCode, Linux Environments
