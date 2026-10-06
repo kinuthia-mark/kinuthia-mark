@@ -25,8 +25,9 @@ Brand monitoring dashboard: mentions, sentiment, crisis alerts, PDF reports and 
 <a href="https://github.com/kinuthia-mark/Social-intelligence"><img src="https://raw.githubusercontent.com/kinuthia-mark/Social-intelligence/main/docs/screenshots/dashboard.png" alt="socialNET dashboard" width="100%"></a>
 
 - Wrote a sentiment and risk engine from scratch: handles negation, intensifiers, emoji and shouting, finds risk terms such as "recall" or "lawsuit", and agrees with 7 of 8 hand-labelled posts
+- Every KPI, chart and the brand health score is computed from about 10,000 mentions in the database, each labelled by that engine
 - JWTs never reach page scripts: Next.js route handlers keep them in httpOnly cookies, with refresh-token rotation and blacklisting
-- 30 API tests, type check, production build and a full Docker Compose run in CI
+- 42 API tests, 17 frontend tests (Vitest), type check, production build and a full Docker Compose run in CI
 
 ---
 
@@ -38,7 +39,7 @@ Digital queue for government service offices. Applicants join from their phone, 
 
 - Wait estimates learned per service from real `called_at` / `completed_at` history
 - Race-safe: queue numbers and "call next" run in locked database transactions, so two officers can never call the same person
-- 25 feature tests on PHP 8.2 and 8.3, Pint style check, and a Docker image started and checked in CI
+- 25 feature tests on PHP 8.2 and 8.3, Pint style check, and a production-style Docker image (Apache, OPcache, cached config) started and checked in CI
 
 ---
 
@@ -72,8 +73,8 @@ Website and content admin for a children's home in Kenya. **PHP 8 + MariaDB**.
 
 | Project | What it is | Built with |
 |---|---|---|
-| [Medical-Pro](https://github.com/kinuthia-mark/MedicalProV1) | Desktop app that turns a doctor-patient transcript into a SOAP note, with copy and save. 30 headless unit tests and a screenshot rendered in CI | Godot 4, GDScript, Gemini API |
-| [Comfort Executive Suites](https://github.com/kinuthia-mark/comfort-website) | Live website for a hotel in Ongata Rongai ([view site](https://kinuthia-mark.github.io/comfort-website/)). Validated HTML, lazy-loaded photos, CI with link checks and an image size limit | HTML, CSS |
+| [Medical-Pro](https://github.com/kinuthia-mark/MedicalProV1) | Desktop app that turns a doctor-patient transcript into a SOAP note. Visit templates (paediatrics, mental health, follow-up), a check that flags notes missing a SOAP section, 41 headless unit tests and a screenshot rendered in CI | Godot 4, GDScript, Gemini API |
+| [Comfort Executive Suites](https://github.com/kinuthia-mark/comfort-website) | Live website for a hotel in Ongata Rongai ([view site](https://kinuthia-mark.github.io/comfort-website/)). Validated HTML, WebP photos with JPEG fallback, lazy loading, CI with link checks and an image size limit | HTML, CSS |
 | [Offline Clinical Consultation Assistant](https://github.com/kinuthia-mark/Offline-Desktop-Based-Medical-Professional-Clinical-Consultation-Assistant-) | Records a consultation, transcribes it and drafts clinical notes, fully offline (in progress) | Python, Whisper, local LLM, SQLCipher |
 
 ---
@@ -87,7 +88,7 @@ Website and content admin for a children's home in Kenya. **PHP 8 + MariaDB**.
 | Frontend | Next.js, React, Tailwind CSS, Bootstrap, TanStack Query |
 | Data | MySQL / MariaDB, SQLite, SQLCipher, Firebase |
 | AI | Whisper, local LLMs (GGUF quantization, Ollama), Gemini API, lexicon-based NLP |
-| Testing | PHPUnit, pytest, Django test runner, Playwright, OPA test |
+| Testing | PHPUnit, pytest, Django test runner, Vitest, Playwright, OPA test |
 | DevOps and security | Docker, GitHub Actions, Terraform, Open Policy Agent, Checkov, TFLint, Trivy |
 
 ## How I build
